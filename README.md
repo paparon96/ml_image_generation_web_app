@@ -16,3 +16,24 @@ This repository contains the files to build your very own AI image generation we
 ![Screenshot 2022-12-15 at 11 34 39 AM](https://user-images.githubusercontent.com/37101144/207929696-886ccfe3-6d86-4674-8aca-0844fb795727.png)
 
 ![Screenshot 2022-12-15 at 11 35 51 AM](https://user-images.githubusercontent.com/37101144/207929748-afafc036-cbf6-48aa-a7b2-b64d66c32b75.png)
+
+# Running the application
+Run the API in your environment: `uvicorn main:app`
+
+# Interactive documentation
+The interactive API docs are available locally [here](http://127.0.0.1:8000/docs).
+
+
+# Usage examples
+
+Below you can find particular code snippets for the various use cases that this API supports (the same could be achieved/tested through the OpenAPI docs page as well).
+
+## Get a new image
+```
+import requests
+
+prompt = "Sheriff in the woods"
+
+response = requests.get('http://127.0.0.1:8000/generate?prompt={prompt}')
+print(response)
+```
