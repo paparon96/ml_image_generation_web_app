@@ -1,0 +1,14 @@
+name: ml_image_generation_web_app
+
+dependencies:
+  - python=3.10
+  - pip:
+    - fastapi[all]
+    - diffusers==0.4.0
+    - transformers
+    - scipy
+    - ftfy
+    - mypy
+    - ruff
+    - black
+    - ipykernel
